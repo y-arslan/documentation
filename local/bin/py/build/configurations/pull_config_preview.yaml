@@ -72,7 +72,7 @@
     contents:
 
     - action: integrations
-      branch: master
+      branch: cswatt/blueprints-docs
       globs:
       - "*/metadata.csv"
       - "*/manifest.json"
