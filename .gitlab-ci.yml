@@ -80,6 +80,9 @@ build_preview:
     CONFIGURATION_FILE: "./local/bin/py/build/configurations/pull_config_preview.yaml"
     LOCAL: "False"
   script:
+    - curl -I "https://gyncvd211h.execute-api.us-east-1.amazonaws.com/staging?webinarId=92412490178"
+    - curl -I "https://2v0s3eanm8.execute-api.us-east-1.amazonaws.com/staging?formId=12345&responseId=12345&page_size=50"
+    - curl -I "https://81uu1ht4b3.execute-api.us-east-1.amazonaws.com/staging/login"
     - post_dd_event "documentation deploy ${CI_COMMIT_REF_NAME} started" "${CI_PROJECT_URL}/pipelines/${CI_PIPELINE_ID}" "info"
     - touch Makefile.config
     - make BRANCH=${CI_COMMIT_REF_NAME} examples
