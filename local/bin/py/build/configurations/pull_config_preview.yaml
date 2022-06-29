@@ -60,7 +60,7 @@
     contents:
 
     - action: integrations
-      branch: prod
+      branch: bryce/remove-agent-check-from-msk-readme
       globs:
       - integration/*/*_metadata.csv
       - integration/*/manifest.json
