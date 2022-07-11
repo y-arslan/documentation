@@ -60,7 +60,7 @@
     contents:
 
     - action: integrations
-      branch: prod
+      branch: bryce/update-cloud-faq-links
       globs:
       - integration/*/*_metadata.csv
       - integration/*/manifest.json
