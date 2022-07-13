@@ -8,6 +8,8 @@ further_reading:
     - link: 'tracing/setup_overview/open_standards/'
       tag: 'Documentation'
       text: 'Learn more about OpenTelemetry'
+aliases:
+  - /metrics/otlp
 ---
 
 ## Overview
