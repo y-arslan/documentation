@@ -4,4 +4,4 @@ enableGitInfo: true
 security:
   exec:
     osEnv:
-      - ['(?i)^(Path|USERPROFILE)$']
+      - ['(?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM|HOME|SSH_AUTH_SOCK|USERPROFILE|XDG_CONFIG_HOME)$']
