@@ -33764,6 +33764,14 @@
                         "description": "The target field to aggregate over when using the sum or max\naggregations.",
                         "type": "string"
                       },
+                      "metrics": {
+                        "description": "Group of target fields to aggregate over when using the new value aggregations.",
+                        "items": {
+                          "description": "Field.",
+                          "type": "string"
+                        },
+                        "type": "array"
+                      },
                       "name": {
                         "description": "Name of the query.",
                         "type": "string"
@@ -34275,6 +34283,14 @@
                 "metric": {
                   "description": "The target field to aggregate over when using the sum or max\naggregations.",
                   "type": "string"
+                },
+                "metrics": {
+                  "description": "Group of target fields to aggregate over when using the new value aggregations.",
+                  "items": {
+                    "description": "Field.",
+                    "type": "string"
+                  },
+                  "type": "array"
                 },
                 "name": {
                   "description": "Name of the query.",
@@ -34848,6 +34864,14 @@
             "description": "The target field to aggregate over when using the sum or max\naggregations.",
             "type": "string"
           },
+          "metrics": {
+            "description": "Group of target fields to aggregate over when using the new value aggregations.",
+            "items": {
+              "description": "Field.",
+              "type": "string"
+            },
+            "type": "array"
+          },
           "name": {
             "description": "Name of the query.",
             "type": "string"
@@ -34921,6 +34945,14 @@
           "metric": {
             "description": "The target field to aggregate over when using the sum or max\naggregations.",
             "type": "string"
+          },
+          "metrics": {
+            "description": "Group of target fields to aggregate over when using the new value aggregations.",
+            "items": {
+              "description": "Field.",
+              "type": "string"
+            },
+            "type": "array"
           },
           "name": {
             "description": "Name of the query.",
@@ -35300,6 +35332,14 @@
                 "metric": {
                   "description": "The target field to aggregate over when using the sum or max\naggregations.",
                   "type": "string"
+                },
+                "metrics": {
+                  "description": "Group of target fields to aggregate over when using the new value aggregations.",
+                  "items": {
+                    "description": "Field.",
+                    "type": "string"
+                  },
+                  "type": "array"
                 },
                 "name": {
                   "description": "Name of the query.",
@@ -35739,6 +35779,14 @@
                 "metric": {
                   "description": "The target field to aggregate over when using the sum or max\naggregations.",
                   "type": "string"
+                },
+                "metrics": {
+                  "description": "Group of target fields to aggregate over when using the new value aggregations.",
+                  "items": {
+                    "description": "Field.",
+                    "type": "string"
+                  },
+                  "type": "array"
                 },
                 "name": {
                   "description": "Name of the query.",
@@ -77536,6 +77584,14 @@
                                   "description": "The target field to aggregate over when using the sum or max\naggregations.",
                                   "type": "string"
                                 },
+                                "metrics": {
+                                  "description": "Group of target fields to aggregate over when using the new value aggregations.",
+                                  "items": {
+                                    "description": "Field.",
+                                    "type": "string"
+                                  },
+                                  "type": "array"
+                                },
                                 "name": {
                                   "description": "Name of the query.",
                                   "type": "string"
@@ -78044,6 +78100,14 @@
                           "description": "The target field to aggregate over when using the sum or max\naggregations.",
                           "type": "string"
                         },
+                        "metrics": {
+                          "description": "Group of target fields to aggregate over when using the new value aggregations.",
+                          "items": {
+                            "description": "Field.",
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
                         "name": {
                           "description": "Name of the query.",
                           "type": "string"
@@ -78467,6 +78531,14 @@
                           "metric": {
                             "description": "The target field to aggregate over when using the sum or max\naggregations.",
                             "type": "string"
+                          },
+                          "metrics": {
+                            "description": "Group of target fields to aggregate over when using the new value aggregations.",
+                            "items": {
+                              "description": "Field.",
+                              "type": "string"
+                            },
+                            "type": "array"
                           },
                           "name": {
                             "description": "Name of the query.",
@@ -79134,6 +79206,14 @@
                             "description": "The target field to aggregate over when using the sum or max\naggregations.",
                             "type": "string"
                           },
+                          "metrics": {
+                            "description": "Group of target fields to aggregate over when using the new value aggregations.",
+                            "items": {
+                              "description": "Field.",
+                              "type": "string"
+                            },
+                            "type": "array"
+                          },
                           "name": {
                             "description": "Name of the query.",
                             "type": "string"
@@ -79618,6 +79698,14 @@
                           "description": "The target field to aggregate over when using the sum or max\naggregations.",
                           "type": "string"
                         },
+                        "metrics": {
+                          "description": "Group of target fields to aggregate over when using the new value aggregations.",
+                          "items": {
+                            "description": "Field.",
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
                         "name": {
                           "description": "Name of the query.",
                           "type": "string"
@@ -80020,6 +80108,14 @@
                           "metric": {
                             "description": "The target field to aggregate over when using the sum or max\naggregations.",
                             "type": "string"
+                          },
+                          "metrics": {
+                            "description": "Group of target fields to aggregate over when using the new value aggregations.",
+                            "items": {
+                              "description": "Field.",
+                              "type": "string"
+                            },
+                            "type": "array"
                           },
                           "name": {
                             "description": "Name of the query.",
