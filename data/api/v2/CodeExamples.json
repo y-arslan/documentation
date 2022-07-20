@@ -128,6 +128,25 @@
       "description": "Update items of a dashboard list returns \"OK\" response"
     }
   ],
+  "ListEvents": [
+    {
+      "group": "events",
+      "suffix": "",
+      "description": "Get a list of events returns \"OK\" response"
+    },
+    {
+      "group": "events",
+      "suffix": "_2663715109",
+      "description": "Get a quick list of events returns \"OK\" response"
+    }
+  ],
+  "SearchEvents": [
+    {
+      "group": "events",
+      "suffix": "",
+      "description": "Search events returns \"OK\" response"
+    }
+  ],
   "CreateIncidentService": [
     {
       "group": "incident_services",
@@ -802,13 +821,6 @@
       "group": "usage_metering",
       "suffix": "_1171921972",
       "description": "Get estimated cost across multi-org account with month returns \"OK\" response"
-    }
-  ],
-  "GetHourlyUsage": [
-    {
-      "group": "usage_metering",
-      "suffix": "",
-      "description": "Get hourly usage by product family returns \"OK\" response"
     }
   ],
   "GetUsageApplicationSecurityMonitoring": [

@@ -4051,6 +4051,19 @@ api:
     url: /api/latest/events/
     identifier: events
     generated: true
+  - name: Search events
+    url: '#search-events'
+    identifier: events-search-events
+    parent: events
+    generated: true
+    params:
+      versions:
+        - v2
+      operationids:
+        - SearchEvents
+      unstable:
+        - v2
+      order: 2
   - name: Get an event
     url: '#get-an-event'
     identifier: events-get-an-event
@@ -4075,17 +4088,19 @@ api:
         - CreateEvent
       unstable: []
       order: 1
-  - name: Query the event stream
-    url: '#query-the-event-stream'
-    identifier: events-query-the-event-stream
+  - name: Get a list of events
+    url: '#get-a-list-of-events'
+    identifier: events-get-a-list-of-events
     parent: events
     generated: true
     params:
       versions:
         - v1
+        - v2
       operationids:
         - ListEvents
-      unstable: []
+      unstable:
+        - v2
       order: 1
   - name: GCP Integration
     url: /api/latest/gcp-integration/
@@ -6196,18 +6211,6 @@ api:
         - GetUsageLambdaTracedInvocations
       unstable: []
       order: 38
-  - name: Get hourly usage by product family
-    url: '#get-hourly-usage-by-product-family'
-    identifier: usage-metering-get-hourly-usage-by-product-family
-    parent: usage-metering
-    generated: true
-    params:
-      versions:
-        - v2
-      operationids:
-        - GetHourlyUsage
-      unstable: []
-      order: 40
   - name: Get cost across multi-org account
     url: '#get-cost-across-multi-org-account'
     identifier: usage-metering-get-cost-across-multi-org-account
