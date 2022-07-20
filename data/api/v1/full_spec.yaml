@@ -12386,11 +12386,13 @@ components:
       enum:
       - http_body
       - http_header
+      - local_variable
       example: http_body
       type: string
       x-enum-varnames:
       - HTTP_BODY
       - HTTP_HEADER
+      - LOCAL_VARIABLE
     SyntheticsGlobalVariableParserType:
       description: Type of parser for a Synthetics global variable from a synthetics
         test.
@@ -13826,9 +13828,7 @@ components:
       type: object
     TreeMapColorBy:
       default: user
-      deprecated: true
-      description: (deprecated) The attribute formerly used to determine color in
-        the widget.
+      description: The attribute used to determine color in the widget.
       enum:
       - user
       example: user
@@ -13836,9 +13836,7 @@ components:
       x-enum-varnames:
       - USER
     TreeMapGroupBy:
-      deprecated: true
-      description: (deprecated) The attribute formerly used to group elements in the
-        widget.
+      description: The attribute used to group elements in the widget.
       enum:
       - user
       - family
@@ -13850,9 +13848,7 @@ components:
       - FAMILY
       - PROCESS
     TreeMapSizeBy:
-      deprecated: true
-      description: (deprecated) The attribute formerly used to determine size in the
-        widget.
+      description: The attribute used to determine size in the widget.
       enum:
       - pct_cpu
       - pct_mem
@@ -13862,26 +13858,20 @@ components:
       - PCT_CPU
       - PCT_MEM
     TreeMapWidgetDefinition:
-      description: The treemap visualization enables you to display hierarchical and
-        nested data. It is well suited for queries that describe part-whole relationships,
-        such as resource usage by availability zone, data center, or team.
+      description: "The treemap visualization found on the Host Dashboards comes from
+        the output of `ps auxww`. This is not continuously run on your hosts. Instead,
+        it\u2019s run once on Agent start/restart. The treemap is only supported for
+        process data on a single host dashboard \u2014 this may not be reused in other
+        dashboards or for other metrics."
       properties:
         color_by:
           $ref: '#/components/schemas/TreeMapColorBy'
-        custom_links:
-          description: List of custom links.
-          items:
-            $ref: '#/components/schemas/WidgetCustomLink'
-          type: array
         group_by:
           $ref: '#/components/schemas/TreeMapGroupBy'
         requests:
-          description: List of treemap widget requests.
+          description: List of top list widget requests.
           example:
-          - aggregator: sum
-            data_source: metrics
-            name: query1
-            query: sum:system.mem.total{*} by {service}
+          - q: system.load.1
           items:
             $ref: '#/components/schemas/TreeMapWidgetRequest'
           maxItems: 1
@@ -13889,8 +13879,6 @@ components:
           type: array
         size_by:
           $ref: '#/components/schemas/TreeMapSizeBy'
-        time:
-          $ref: '#/components/schemas/WidgetTime'
         title:
           description: Title of your widget.
           type: string
@@ -28029,6 +28017,12 @@ paths:
       tags:
       - Synthetics
       x-codegen-request-body-name: body
+      x-given:
+        synthetics_global_variable:
+          parameters:
+          - file: synthetics_global_variable_payload.json
+            name: body
+          step: there is a valid "synthetics_global_variable" in the system
       x-menu-order: 18
       x-undo:
         operationId: DeleteGlobalVariable
