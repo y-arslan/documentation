@@ -7090,6 +7090,70 @@ api:
         - DownloadCloudWorkloadPolicyFile
       unstable: []
       order: 1
+  - name: Dashboard Reports
+    url: /api/latest/dashboard-reports/
+    identifier: dashboard-reports
+    generated: true
+  - name: Update Dashboard Report Config
+    url: '#update-dashboard-report-config'
+    identifier: dashboard-reports-update-dashboard-report-config
+    parent: dashboard-reports
+    generated: true
+    params:
+      versions:
+        - v2
+      operationids:
+        - UpdateDashboardReportConfig
+      unstable: []
+      order: 0
+  - name: Get Dashboard Report Config
+    url: '#get-dashboard-report-config'
+    identifier: dashboard-reports-get-dashboard-report-config
+    parent: dashboard-reports
+    generated: true
+    params:
+      versions:
+        - v2
+      operationids:
+        - GetDashboardReportConfig
+      unstable: []
+      order: 0
+  - name: Delete Dashboard Report Config
+    url: '#delete-dashboard-report-config'
+    identifier: dashboard-reports-delete-dashboard-report-config
+    parent: dashboard-reports
+    generated: true
+    params:
+      versions:
+        - v2
+      operationids:
+        - DeleteDashboardReportConfig
+      unstable: []
+      order: 0
+  - name: Create Dashboard Report Config
+    url: '#create-dashboard-report-config'
+    identifier: dashboard-reports-create-dashboard-report-config
+    parent: dashboard-reports
+    generated: true
+    params:
+      versions:
+        - v2
+      operationids:
+        - CreateDashboardReportConfig
+      unstable: []
+      order: 0
+  - name: Get Dashboard Report Configs List
+    url: '#get-dashboard-report-configs-list'
+    identifier: dashboard-reports-get-dashboard-report-configs-list
+    parent: dashboard-reports
+    generated: true
+    params:
+      versions:
+        - v2
+      operationids:
+        - GetDashboardReportConfigsList
+      unstable: []
+      order: 0
   - name: Incident Services
     url: /api/latest/incident-services/
     identifier: incident-services

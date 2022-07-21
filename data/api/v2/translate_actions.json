@@ -121,6 +121,30 @@
     "request_description": "New dashboards of the dashboard list.",
     "request_schema_description": "Request containing the list of dashboards to update to."
   },
+  "GetDashboardReportConfigsList": {
+    "description": "Get Dashboard Report Configs List",
+    "summary": "Get Dashboard Report Configs List"
+  },
+  "CreateDashboardReportConfig": {
+    "description": "Create Dashboard Report Config",
+    "summary": "Create Dashboard Report Config",
+    "request_description": "",
+    "request_schema_description": "Request body when creating a new Dashboard Report"
+  },
+  "DeleteDashboardReportConfig": {
+    "description": "Delete Dashboard Report Config",
+    "summary": "Delete Dashboard Report Config"
+  },
+  "GetDashboardReportConfig": {
+    "description": "Get Dashboard Report Config",
+    "summary": "Get Dashboard Report Config"
+  },
+  "UpdateDashboardReportConfig": {
+    "description": "Update Dashboard Report Config",
+    "summary": "Update Dashboard Report Config",
+    "request_description": "",
+    "request_schema_description": "Request body when updating a Dashboard Report"
+  },
   "ListIncidents": {
     "description": "Get all incidents for the user's organization.",
     "summary": "Get a list of incidents"
